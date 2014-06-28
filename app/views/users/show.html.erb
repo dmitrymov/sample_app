@@ -1,0 +1,9 @@
+<% @user.name %> <% @user.email %>
+
+
+<% if @user.position == 'full' %>
+    <%= render :file => 'users/full_time_table.html.erb' %>
+<% else %>
+    <%= render :file => 'users/part_time_table.html.erb' %>
+<% end %>
+
